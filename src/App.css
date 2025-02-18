@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Añadí un poco de padding para no quedar pegado al borde */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas grandes (Desktops) */
+@media (min-width: 1024px) {
+  .App-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(
+      14px + 1vw
+    ); /* Aumenta ligeramente el tamaño de la fuente */
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 20vmin;
+  }
+}
+
+/* Pantallas medianas (Tabletas) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 1vw); /* Un poco más pequeño */
+  }
+  .App-logo {
+    height: 25vmin;
+  }
+}
+
+/* Pantallas pequeñas (Móviles) */
+@media (max-width: 767px) {
+  .App-header {
+    font-size: calc(10px + 3vw); /* Asegurando que la fuente se ajuste bien */
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .App-logo {
+    height: 30vmin; /* El logo se hace más grande en pantallas pequeñas */
+  }
+
+  .App-link {
+    font-size: 16px; /* Ajustando el tamaño del link */
+  }
+}
+
+/* Agregar estilo global para el placeholder */
+input::placeholder {
+  color: #90cea1; /* El color que desees para el placeholder */
+  opacity: 1; /* Asegurarte de que no se vea demasiado tenue */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
